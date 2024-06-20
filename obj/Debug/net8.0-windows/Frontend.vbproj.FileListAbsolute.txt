@@ -14,3 +14,5 @@ C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\refin
 C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.pdb
 C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.genruntimeconfig.cache
 C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\ref\Frontend.dll
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.sourcelink.json
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.ViewSubmissionsForm.resources

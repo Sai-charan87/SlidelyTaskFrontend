@@ -22,36 +22,36 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        btn1vs = New Button()
-        btn2cs = New Button()
+        btnViewSubmissions = New Button()
+        btnCreateSubmission = New Button()
         lbform1 = New Label()
         SuspendLayout()
         ' 
-        ' btn1vs
+        ' btnViewSubmissions
         ' 
-        btn1vs.Font = New Font("Segoe UI", 14F)
-        btn1vs.Location = New Point(51, 144)
-        btn1vs.Name = "btn1vs"
-        btn1vs.Size = New Size(515, 56)
-        btn1vs.TabIndex = 0
-        btn1vs.Text = "VIEW SUBMISSIONS ( CTRL + V)"
-        btn1vs.UseVisualStyleBackColor = True
+        btnViewSubmissions.Font = New Font("Segoe UI", 14F)
+        btnViewSubmissions.Location = New Point(51, 65)
+        btnViewSubmissions.Name = "btnViewSubmissions"
+        btnViewSubmissions.Size = New Size(515, 56)
+        btnViewSubmissions.TabIndex = 0
+        btnViewSubmissions.Text = "VIEW SUBMISSIONS ( CTRL + V)"
+        btnViewSubmissions.UseVisualStyleBackColor = True
         ' 
-        ' btn2cs
+        ' btnCreateSubmission
         ' 
-        btn2cs.Font = New Font("Segoe UI", 14F)
-        btn2cs.Location = New Point(51, 254)
-        btn2cs.Name = "btn2cs"
-        btn2cs.Size = New Size(515, 61)
-        btn2cs.TabIndex = 1
-        btn2cs.Text = "CREATE NEW SUBMISSION ( CTRL + N)"
-        btn2cs.UseVisualStyleBackColor = True
+        btnCreateSubmission.Font = New Font("Segoe UI", 14F)
+        btnCreateSubmission.Location = New Point(51, 150)
+        btnCreateSubmission.Name = "btnCreateSubmission"
+        btnCreateSubmission.Size = New Size(515, 61)
+        btnCreateSubmission.TabIndex = 1
+        btnCreateSubmission.Text = "CREATE NEW SUBMISSION ( CTRL + N)"
+        btnCreateSubmission.UseVisualStyleBackColor = True
         ' 
         ' lbform1
         ' 
         lbform1.AutoSize = True
         lbform1.Font = New Font("Segoe UI", 16F)
-        lbform1.Location = New Point(103, 63)
+        lbform1.Location = New Point(83, 9)
         lbform1.Name = "lbform1"
         lbform1.Size = New Size(432, 30)
         lbform1.TabIndex = 2
@@ -61,18 +61,18 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(625, 368)
+        ClientSize = New Size(625, 227)
         Controls.Add(lbform1)
-        Controls.Add(btn2cs)
-        Controls.Add(btn1vs)
+        Controls.Add(btnCreateSubmission)
+        Controls.Add(btnViewSubmissions)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents btn1vs As Button
-    Friend WithEvents btn2cs As Button
+    Friend WithEvents btnViewSubmissions As Button
+    Friend WithEvents btnCreateSubmission As Button
     Friend WithEvents lbform1 As Label
 
 End Class
