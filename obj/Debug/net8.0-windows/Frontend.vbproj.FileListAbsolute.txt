@@ -1,0 +1,16 @@
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\bin\Debug\net8.0-windows\Frontend.exe
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\bin\Debug\net8.0-windows\Frontend.deps.json
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\bin\Debug\net8.0-windows\Frontend.runtimeconfig.json
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\bin\Debug\net8.0-windows\Frontend.dll
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\bin\Debug\net8.0-windows\Frontend.pdb
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.Form1.resources
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.vbproj.GenerateResource.cache
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.AssemblyInfoInputs.cache
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.AssemblyInfo.vb
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.vbproj.CoreCompileInputs.cache
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.dll
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\refint\Frontend.dll
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.pdb
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.genruntimeconfig.cache
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\ref\Frontend.dll
