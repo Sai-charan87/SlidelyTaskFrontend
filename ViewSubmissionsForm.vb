@@ -1,4 +1,8 @@
-﻿Public Class ViewSubmissionsForm
+﻿Imports System.IO
+Imports System.Reflection
+Imports Newtonsoft.Json
+
+Public Class ViewSubmissionsForm
     Private submissions As List(Of Submission)
     Private currentIndex As Integer = 0
 
@@ -7,8 +11,17 @@
         Public Property Name As String
         Public Property Email As String
         Public Property Phone As String
+        <JsonProperty("github_link")>
         Public Property GithubLink As String
+        <JsonProperty("stopwatch_time")>
         Public Property StopwatchTime As String
+    End Class
+
+
+
+    ' Helper class to match the JSON structure
+    Private Class SubmissionsWrapper
+        Public Property submissions As List(Of Submission)
     End Class
 
     Public Sub New()
@@ -16,10 +29,7 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        submissions = New List(Of Submission) From {
-            New Submission With {.Name = "John Doe", .Email = "john@example.com", .Phone = "123-456-7890", .GithubLink = "https://github.com/johndoe", .StopwatchTime = "00:01:23"},
-            New Submission With {.Name = "Jane Smith", .Email = "jane@example.com", .Phone = "987-654-3210", .GithubLink = "https://github.com/janesmith", .StopwatchTime = "00:02:34"}
-        }
+        LoadSubmissionsFromJson()
 
         ' Set TextBoxes to read-only
         txtName.ReadOnly = True
@@ -35,15 +45,58 @@
         DisplaySubmission(currentIndex)
     End Sub
 
+    Private Sub LoadSubmissionsFromJson()
+        Try
+            ' Get the base directory of the application
+            Dim baseDirectory As String = AppDomain.CurrentDomain.BaseDirectory
+
+            ' Construct the full path to db.json within the backend folder
+            Dim dbJsonPath As String = Path.Combine(baseDirectory, "..", "..", "..", "..", "Backend", "src", "db.json")
+
+            ' Normalize the path
+            dbJsonPath = Path.GetFullPath(dbJsonPath)
+
+            ' Check if the file exists
+            If File.Exists(dbJsonPath) Then
+                ' Read submissions from db.json file and deserialize JSON to List(Of Submission)
+                Dim json As String = File.ReadAllText(dbJsonPath)
+                Dim submissionsWrapper As SubmissionsWrapper = JsonConvert.DeserializeObject(Of SubmissionsWrapper)(json)
+
+                ' Assign the submissions list
+                submissions = submissionsWrapper.submissions
+
+                ' Check if the submissions list is initialized
+                If submissions Is Nothing Then
+                    MessageBox.Show("Failed to deserialize submissions from the JSON file.")
+                ElseIf submissions.Count = 0 Then
+                    MessageBox.Show("The submissions list is empty.")
+                End If
+            Else
+                MessageBox.Show($"Database file not found at: {dbJsonPath}")
+            End If
+        Catch ex As Exception
+            MessageBox.Show($"An error occurred while loading the submissions: {ex.Message}")
+        End Try
+    End Sub
+
     Private Sub DisplaySubmission(index As Integer)
-        If index >= 0 AndAlso index < submissions.Count Then
+        If submissions IsNot Nothing AndAlso index >= 0 AndAlso index < submissions.Count Then
             txtName.Text = submissions(index).Name
             txtEmail.Text = submissions(index).Email
             txtPhone.Text = submissions(index).Phone
             txtGithub.Text = submissions(index).GithubLink
             txtStopwatchTime.Text = submissions(index).StopwatchTime
+        Else
+            ' Clear the text boxes if no valid submission is found
+            txtName.Clear()
+            txtEmail.Clear()
+            txtPhone.Clear()
+            txtGithub.Clear()
+            txtStopwatchTime.Clear()
         End If
     End Sub
+
+
 
     Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
         ShowPreviousSubmission()

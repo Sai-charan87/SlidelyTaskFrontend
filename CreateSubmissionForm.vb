@@ -62,6 +62,7 @@ Public Class CreateSubmissionForm
             Dim response = Await client.PostAsync("http://localhost:3000/submit", content)
             If response.IsSuccessStatusCode Then
                 MessageBox.Show("Submission successful!")
+                Me.Close() ' Close the form after successful submission
             Else
                 MessageBox.Show("Submission failed.")
             End If
