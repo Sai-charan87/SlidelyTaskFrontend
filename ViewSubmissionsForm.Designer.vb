@@ -97,10 +97,11 @@ Partial Class ViewSubmissionsForm
         ' txtGithub
         ' 
         txtGithub.Font = New Font("Segoe UI", 14F)
-        txtGithub.Location = New Point(257, 392)
+        txtGithub.Location = New Point(254, 392)
+        txtGithub.Multiline = True
         txtGithub.Name = "txtGithub"
         txtGithub.ReadOnly = True
-        txtGithub.Size = New Size(327, 32)
+        txtGithub.Size = New Size(330, 32)
         txtGithub.TabIndex = 9
         ' 
         ' txtStopwatchTime

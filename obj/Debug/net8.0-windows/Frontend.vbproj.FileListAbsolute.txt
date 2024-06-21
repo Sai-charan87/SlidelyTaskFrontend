@@ -16,3 +16,7 @@ C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Front
 C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\ref\Frontend.dll
 C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.sourcelink.json
 C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.ViewSubmissionsForm.resources
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.vbproj.AssemblyReference.cache
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.CreateSubmissionForm.resources
+C:\Users\dsaic\source\repos\SlidelyTask2\Frontend\obj\Debug\net8.0-windows\Frontend.vbproj.Up2Date
